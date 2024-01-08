@@ -1,0 +1,12 @@
+.dashboard-section-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 2.5rem;
+
+  &::after {
+    content: ' ';
+    display: block;
+    width: 15rem;
+    border-bottom: 0.5rem solid var(--primary-dark);
+    margin: 1.5rem auto 1.5rem auto;
+  }
+}

@@ -1,0 +1,13 @@
+.history-value {
+  width: 50rem;
+  margin: 5rem 0 5rem 0;
+  font-size: 2rem;
+}
+
+.history-win {
+  color: var(--history-win);
+}
+
+.history-loss {
+  color: var(--history-loss);
+}

@@ -1,0 +1,39 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 10rem 5rem 10rem 5rem;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  background-color: var(--primary-off);
+  border: 0.5rem solid var(--primary-main);
+  border-radius: 2rem;
+
+  & div:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  & span {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 2rem;
+  }
+
+  & img {
+    image-rendering: pixelated;
+    width: 15rem;
+  }
+}
+
+.card-active {
+  background-color: var(--primary-main);
+  color: var(--primary-off);
+  border: 0.5rem solid var(--primary-off);
+}

@@ -1,0 +1,37 @@
+.history-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  margin: 0 5rem 0 5rem;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  background-color: var(--primary-off);
+  font-size: 1.6rem;
+  border: 0.5rem solid var(--primary-main);
+  border-radius: 2rem;
+
+  & img {
+    image-rendering: pixelated;
+    width: 15rem;
+  }
+
+  & div {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+  & span {
+    text-align: center;
+  }
+}
+
+.history-card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

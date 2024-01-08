@@ -1,0 +1,35 @@
+.market-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.market-mode-selectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70vw;
+  margin: 2rem 0rem 2rem 0rem;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    font-size: 1.6rem;
+
+    & p {
+      margin: 3rem 0 0 0;
+    }
+  }
+
+  & p {
+    font-size: 1.6rem;
+  }
+}
+
+.active {
+  background-color: var(--primary-off);
+  color: var(--primary-main);
+}

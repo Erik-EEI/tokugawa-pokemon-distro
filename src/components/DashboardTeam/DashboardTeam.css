@@ -1,0 +1,11 @@
+.team-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team-pokemon-card {
+  display: flex;
+  flex-direction: row;
+  margin: 2.5rem 5rem 2.5rem 5rem;
+}

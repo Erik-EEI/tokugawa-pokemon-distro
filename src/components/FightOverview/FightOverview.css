@@ -1,0 +1,39 @@
+.fight-overview-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+.fight-overview-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.enemy-win-case,
+.player-win-case {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+
+  & h1,
+  h2,
+  h3 {
+    color: var(--primary-background-color);
+  }
+}
+
+.fight-overview-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

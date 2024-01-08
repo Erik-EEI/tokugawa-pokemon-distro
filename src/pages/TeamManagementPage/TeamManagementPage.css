@@ -1,0 +1,95 @@
+.team-management-active-container {
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+  }
+
+  & h1::after {
+    content: '';
+    display: block;
+    width: 40vw;
+    border-bottom: 0.5rem solid var(--primary-dark);
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+.team-management-active-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem 5rem 5rem 5rem;
+}
+
+.team-management-storage-container {
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    margin-top: 2rem;
+    align-self: center;
+    text-align: center;
+  }
+
+  & h1::after {
+    content: '';
+    display: block;
+    width: 40vw;
+    border-bottom: 0.5rem solid var(--primary-dark);
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+.management-top-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: min-content;
+
+  & h1::after {
+    content: '';
+    display: block;
+    width: 40vw;
+    border-bottom: 0.5rem solid var(--primary-dark);
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+.team-management-storage-cards {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 80vw;
+  align-self: center;
+  mask-image: linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%);
+  background-position: bottom;
+  background-size: cover;
+  overflow-x: scroll;
+
+  & > * {
+    margin: 1rem 5rem 1rem 5rem;
+  }
+}
+
+.team-management-container dialog {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  margin: auto;
+  padding: 2rem 2rem 2rem 2rem;
+  z-index: 1;
+  border: 0.5rem solid var(--primary-main);
+  border-radius: 2rem;
+}
+
+.team-management-container dialog::backdrop {
+  background-color: var(--primary-dark);
+}
+
+#alert-dialog-description {
+  font-size: 1.5rem;
+}

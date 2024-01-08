@@ -1,0 +1,123 @@
+.location-page-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-auto-flow: row;
+
+  background-image: url('../../assets/poke-locations-background.jpg');
+  background-position: center;
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.search-bar {
+  grid-area: 1 / 1 / 2 / 4;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+
+  color: white;
+
+  & input {
+    width: 80vw;
+    height: 3rem;
+
+    padding: 2rem 0 2rem 0;
+
+    border-radius: 2rem;
+    border: 5px solid var(--primary-dark);
+
+    text-align: center;
+    font-family: inherit;
+
+    color: var(--primary-dark);
+
+    background-color: var(--primary-background-color);
+  }
+
+  & input::placeholder{
+    color: var(--primary-dark);
+  }
+  
+  & input:focus{
+    outline: none;
+  }
+  }
+
+.scroll-menu {
+  grid-area: 2 / 1 / 3 / 4;
+
+  width: 100vw;
+  height: 40vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.areas {
+  grid-area: 3 / 1 / 4 / 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 30px;
+
+  border:solid black 4px;
+  border-radius: 5rem;
+
+  background-color: var(--primary-background-color);
+
+  height: fit-content;
+  max-height: 90%;
+
+  margin: 0 1rem 0 10vw;
+}
+
+.fight-button {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.go-button {
+  width: 100%;
+  height: 15rem;
+
+  border: solid black 2px;
+  border-radius: 5rem;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 1rem;
+
+  opacity: 0;
+
+  transition: all 1500ms;
+}
+
+.go-button:hover {
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.8);
+  font-size: 6rem;
+}
+
+.go-button-active {
+  background-image: url('../../assets/location-button-active.jpg');
+  background-position: center;
+  background-size: cover;
+
+  opacity: 1;
+
+  font-size: 7rem;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+
+}

@@ -1,0 +1,73 @@
+.market-list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85vw;
+  margin: 5rem 0 15rem 0;
+}
+
+.market-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  margin: 3.5rem 5rem 3.5rem 5rem;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  border: 0.5rem solid var(--primary-dark);
+  border-radius: 2rem;
+
+  & img {
+    image-rendering: pixelated;
+  }
+}
+
+.pokemon-name {
+  font-size: 2.5rem;
+}
+
+.market-img-back {
+  display: none;
+  transition: all 300ms;
+}
+
+.market-card:hover .market-img-back {
+  display: block;
+  transition: all 300ms;
+}
+
+.market-card:hover .market-img-front {
+  display: none;
+  transition: all 300ms;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.market-card-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  & p {
+    margin: 2.5rem 0 0 2rem;
+    font-size: 2rem;
+  }
+}
+
+.market-card-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & p {
+    margin: 0.5rem 0 0.5rem 2.5rem;
+    font-size: 1rem;
+  }
+}

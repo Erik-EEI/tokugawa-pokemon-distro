@@ -1,0 +1,11 @@
+.dashboard-history-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem 0 2.5rem 0;
+
+  & p {
+    margin: 2.5rem 0 2.5rem 0;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,40 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0 0 0;
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.history-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  margin: 0 5rem 0 5rem;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  background-color: var(--primary-off);
+  font-size: 1.6rem;
+  border: 0.5rem solid var(--primary-main);
+  border-radius: 2rem;
+
+  & p {
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 0 0 0;
+
+  & article {
+    display: flex;
+    flex-direction: row;
+  }
+}

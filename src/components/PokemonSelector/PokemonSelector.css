@@ -1,0 +1,56 @@
+.background-blur {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pokemon-selector-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 10rem 0;
+
+  & h1 {
+    margin: 10rem 0 0 0;
+    color: var(--primary-background-color);
+  }
+}
+
+.selector-panel-enemy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selector-panel-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.start-stop-buttons {
+  display: flex;
+  flex-direction: row;
+
+  & .area-bet-display {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    background-color: var(--primary-off);
+    font-size: 2.5rem;
+    border: 0.3rem solid var(--primary-main);
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+}
+
+.fight-bet-controls {
+  display: flex;
+  flex-direction: row;
+
+  & > * {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+}
